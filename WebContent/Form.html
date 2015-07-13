@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Order form</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+<body>
+
+
+	<form action="/my-handling-form-page" method="post">
+
+		<h1>Customer</h1>
+
+		<div>
+			<label for="name">Name:</label> <input type="text" required id="field-required" id="name" />
+		</div>
+
+		<div>
+			<label for="surname">Surname:</label> <input type="text" id="surname" />
+		</div>
+
+		<div>
+			<label for="mail">E-mail:</label> <input type="email" id="mail" />
+		</div>
+
+		<div>
+			<label for="type">Type:</label> <input type="radio" name="type"
+				value="individual" checked>Individual <input type="radio"
+				name="type" value="business">Business
+		</div>
+
+		<br>
+
+		<h1>Pizza</h1>
+
+		<div>
+			<label for="name">Name:</label> <input type="text" id="name" />
+		</div>
+
+		<label for="type">Type:</label> <select>
+			<option value="small">Small</option>
+			<option value="medium">Medium</option>
+			<option value="big">Big</option>
+		</select> <br>
+
+		<h1>Suggested delivery date</h1>
+
+		<div>
+			<input type="date" id="date" />
+		</div>
+
+		<br>
+
+		<h1>Additional data</h1>
+
+		<textarea id="msg"></textarea>
+
+		<div class="button">
+			<button type="submit">Order pizza</button>
+		</div>
+
+
+	</form>
+
+</body>
+</html>
